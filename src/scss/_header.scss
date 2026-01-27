@@ -3,8 +3,36 @@
 .headerContainer {
   position: relative;
   background-image: url(assets/Billboard_Mockup_Ingrid.webp);
-  background-size: cover;
-  background-position: 100%;
-  height: $header-height;
-  width: auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 4/3;
+  max-height: 50vh;
+  width: 100%;
+
+  .navLinks {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    a {
+      text-decoration: none;
+
+      .logo {
+        transition: $transition;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet_breakpoint) {
+  .headerContainer {
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16/9;
+  }
 }

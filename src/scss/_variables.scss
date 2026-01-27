@@ -4,7 +4,7 @@ $fontFamily:
 $fontSize: 16px;
 
 // colors
-$primary: #242424;
+$primary: #24201c;
 $secondary: #dccbb6;
 
 // button colors
@@ -17,7 +17,7 @@ $secondary_button_hover: #8c3a2b;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 $inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 $overlay: rgba(0, 0, 0, 0.45);
-$transition: all 0.2s ease;
+$transition: 0.2s ease;
 
 // padding, margin... har bara skapat ungefär kan ändras
 $margin-sm: 0.5rem;
@@ -35,5 +35,5 @@ $button-size: 3rem;
 $header-height: 580px;
 
 // breakpoints
-$tablet_breakpoint: 990px;
+$tablet_breakpoint: 660px;
 $desktop_breakpoint: 1200px;
