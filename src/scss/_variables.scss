@@ -8,10 +8,8 @@ $primary: #24201c;
 $secondary: #dccbb6;
 
 // button colors
-$primary_button_bg: #6f7f3a;
-$secondary_button_bg: #dccbb6;
-$primary_button_hover: #515d2a;
-$secondary_button_hover: #8c3a2b;
+$button_bg: #6f7f3a;
+$button_hover: #515d2a;
 
 // shadows and overlays
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
@@ -32,7 +30,6 @@ $padding-lg: 1.5rem;
 $line-height: 1.5rem;
 
 $button-size: 3rem;
-$header-height: 580px;
 
 // breakpoints
 $tablet_breakpoint: 660px;

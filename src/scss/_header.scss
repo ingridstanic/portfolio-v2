@@ -34,5 +34,12 @@
     background-size: cover;
     background-position: center;
     aspect-ratio: 16/9;
+    max-height: 60vh;
+  }
+}
+
+@media screen and (min-width: $desktop_breakpoint) {
+  .headerContainer {
+    max-height: 90vh;
   }
 }

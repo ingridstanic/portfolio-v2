@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+.navContainer {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $padding-lg;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: $secondary;
+        text-transform: uppercase;
+        padding: $padding-sm;
+        margin: $margin-sm;
+        transition: $transition;
+
+        &:hover {
+          outline: solid 2px #ff8c00;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet_breakpoint) {
+}
+
+@media screen and (min-width: $desktop_breakpoint) {
+  .navContainer {
+    .navbar {
+      height: 10vh;
+    }
+  }
+}
