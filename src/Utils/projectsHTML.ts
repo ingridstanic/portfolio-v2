@@ -1,7 +1,7 @@
 import type { Project } from "../models/Project";
 
 export const HtmlForProjects = (myProjects: Project[]) => {
-  const projectContainer = document.getElementById("projects");
+  const projectContainer = document.getElementById("projects-container");
   if (!projectContainer) return;
 
   myProjects.forEach((project) => {
@@ -12,6 +12,7 @@ export const HtmlForProjects = (myProjects: Project[]) => {
     const infoContainer = document.createElement("div");
     const title = document.createElement("h2");
     const info = document.createElement("p");
+    const linkContainer = document.createElement("div");
     const link = document.createElement("a");
 
     //Change element
@@ -22,13 +23,17 @@ export const HtmlForProjects = (myProjects: Project[]) => {
     infoContainer.className = "infoContainer";
     title.innerHTML = project.title;
     info.innerHTML = project.info;
-    link.innerHTML = project.githublink;
+    linkContainer.className = "linkContainer";
+    link.innerHTML = "view on github";
+    link.href = project.githublink;
+    link.target = "_blank";
 
     //Place element
     imgContainer.appendChild(img);
+    linkContainer.appendChild(link);
     infoContainer.appendChild(title);
     infoContainer.appendChild(info);
-    infoContainer.appendChild(link);
+    infoContainer.appendChild(linkContainer);
 
     projectCard.appendChild(imgContainer);
     projectCard.appendChild(infoContainer);

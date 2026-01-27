@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 .navContainer {
+  box-shadow: $box-shadow;
   .navbar {
     display: flex;
     justify-content: center;
@@ -23,7 +24,8 @@
         transition: $transition;
 
         &:hover {
-          outline: solid 2px #ff8c00;
+          outline: solid 2px $accent;
+          transform: scale(1.2);
         }
       }
     }

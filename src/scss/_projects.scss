@@ -1,0 +1,88 @@
+@use "variables" as *;
+
+.projectSection {
+  place-items: center;
+
+  h1 {
+    color: $secondary;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: $padding-md;
+    margin-top: $margin-xlg;
+    margin-bottom: $margin-lg;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .projectCard {
+      height: 280px;
+      width: 250px;
+      box-shadow: $card-shadow;
+      border-radius: 10px;
+      overflow: hidden;
+
+      .imgContainer {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .infoContainer {
+        height: 50%;
+
+        h2 {
+          font-size: 1.2em;
+          font-weight: 500;
+          color: $secondary;
+          padding: $padding-sm;
+          margin: 0;
+        }
+
+        p {
+          color: $secondary;
+          font-size: 0.8em;
+          padding: $padding-sm;
+          margin: 0;
+        }
+      }
+
+      .linkContainer {
+        display: flex;
+        justify-content: center;
+
+        a {
+          font-size: 0.8em;
+          color: $accent;
+          text-transform: uppercase;
+          margin: $margin-sm;
+          transition: $transition;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet_breakpoint) {
+  .projectSection .projectContainer {
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+  }
+}
+
+@media screen and (min-width: $desktop_breakpoint) {
+  .projectSection .projectContainer {
+    gap: 50px;
+  }
+}

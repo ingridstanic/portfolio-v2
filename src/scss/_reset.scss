@@ -11,4 +11,5 @@ body {
   font-size: $fontSize;
   font-family: $fontFamily;
   background-color: $primary;
+  scroll-behavior: smooth;
 }
