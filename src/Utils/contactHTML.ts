@@ -17,7 +17,7 @@ export const HtmlForContact = () => {
   //Edit element
   businessCard.className = "businessCard";
   logoContainer.className = "logoContainer";
-  logo.src = "assets/placeholder.png";
+  logo.src = "assets/Logo.svg";
   logo.alt = "Ingrid Stanic logo";
   contactInfo.className = "contactInfo";
   fullName.innerHTML = "Ingrid Stanic";
@@ -26,9 +26,11 @@ export const HtmlForContact = () => {
   email.href = "mailto:ingrid.stanic@medieinstitutet.se";
   linkContainer.className = "linkContainer";
   github.href = "https://github.com/ingridstanic";
-  github.innerHTML = `<img src="assets/github.svg">`;
+  github.innerHTML = `<img src="assets/github2.svg">`;
+  github.target = "_blank";
   linkedin.href = "https://www.linkedin.com/in/ingrid-stanic-5b57aa281/";
-  linkedin.innerHTML = `<img src="assets/linkedin.svg">`;
+  linkedin.innerHTML = `<img src="assets/linkedin2.svg">`;
+  linkedin.target = "_blank";
 
   //Place element
   logoContainer.appendChild(logo);
