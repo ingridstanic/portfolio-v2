@@ -15,7 +15,7 @@ export const HtmlForProjects = (myProjects: Project[]) => {
     const linkContainer = document.createElement("div");
     const link = document.createElement("a");
 
-    //Change element
+    //Edit element
     projectCard.className = "projectCard";
     imgContainer.className = "imgContainer";
     img.src = project.img;
