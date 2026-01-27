@@ -9,7 +9,7 @@ export const HtmlForContact = () => {
   const contactInfo = document.createElement("div");
   const fullName = document.createElement("h2");
   const title = document.createElement("h3");
-  const email = document.createElement("p");
+  const email = document.createElement("a");
   const linkContainer = document.createElement("div");
   const github = document.createElement("a");
   const linkedin = document.createElement("a");
@@ -23,11 +23,12 @@ export const HtmlForContact = () => {
   fullName.innerHTML = "Ingrid Stanic";
   title.innerHTML = "Frontend Developer";
   email.innerHTML = "ingrid.stanic@medieinstitutet.se";
+  email.href = "mailto:ingrid.stanic@medieinstitutet.se";
   linkContainer.className = "linkContainer";
   github.href = "https://github.com/ingridstanic";
-  github.innerHTML = "<img>assets/github.svg</img>";
+  github.innerHTML = `<img src="assets/github.svg">`;
   linkedin.href = "https://www.linkedin.com/in/ingrid-stanic-5b57aa281/";
-  linkedin.innerHTML = "<img>assets/linkedin.svg</img>";
+  linkedin.innerHTML = `<img src="assets/linkedin.svg">`;
 
   //Place element
   logoContainer.appendChild(logo);
@@ -40,7 +41,6 @@ export const HtmlForContact = () => {
 
   businessCard.appendChild(logoContainer);
   businessCard.appendChild(contactInfo);
-  businessCard.appendChild(linkContainer);
 
   contactContainer.appendChild(businessCard);
 };
