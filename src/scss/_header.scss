@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+.headerContainer {
+  position: relative;
+  background-image: url(assets/Billboard_Mockup_Ingrid.webp);
+  background-size: cover;
+  background-position: 100%;
+  height: $header-height;
+  width: auto;
+}
