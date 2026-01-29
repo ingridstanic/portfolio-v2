@@ -8,15 +8,10 @@ $primary: #24201c;
 $secondary: #dccbb6;
 $accent: #ff8c00;
 
-// button colors
-$button_bg: #6f7f3a;
-$button_hover: #515d2a;
-
 // shadows and overlays
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 $card-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 $inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-$overlay: rgba(0, 0, 0, 0.45);
 $transition: 0.2s ease-in-out;
 
 // padding, margin... har bara skapat ungefär kan ändras
@@ -28,10 +23,6 @@ $margin-xlg: 5rem;
 $padding-sm: 0.5rem;
 $padding-md: 1rem;
 $padding-lg: 1.5rem;
-
-$line-height: 1.5rem;
-
-$button-size: 3rem;
 
 // breakpoints
 $tablet_breakpoint: 660px;
