@@ -25,6 +25,11 @@
       border-radius: 10px;
       overflow: hidden;
 
+      &:hover {
+        outline: 3px solid $accent;
+        cursor: pointer;
+      }
+
       .imgContainer {
         width: 100%;
         height: 50%;

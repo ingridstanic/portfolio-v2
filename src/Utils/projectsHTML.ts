@@ -17,6 +17,9 @@ export const HtmlForProjects = (myProjects: Project[]) => {
 
     //Edit element
     projectCard.className = "projectCard";
+    projectCard.addEventListener("click", () => {
+      window.open(project.liveDemoLink, "_blank");
+    });
     imgContainer.className = "imgContainer";
     img.src = project.img;
     img.alt = "Preview image";
@@ -27,6 +30,9 @@ export const HtmlForProjects = (myProjects: Project[]) => {
     link.innerHTML = "view on github";
     link.href = project.githublink;
     link.target = "_blank";
+    link.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
 
     //Place element
     imgContainer.appendChild(img);
