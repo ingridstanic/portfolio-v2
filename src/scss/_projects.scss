@@ -1,7 +1,9 @@
 @use "variables" as *;
 
 .projectSection {
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     color: $secondary;
