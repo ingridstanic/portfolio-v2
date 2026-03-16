@@ -14,19 +14,19 @@ const coffeeShop: Project = new Project(
   "https://github.com/ingridstanic/CoffeeShop",
   "https://gorgeous-marshmallow-4c7860.netlify.app/",
 );
-const project3: Project = new Project(
-  "assets/placeholder.png",
-  "Lorem Ipsum",
-  "dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "placeholder",
-  "placeholder",
+const crudAPI: Project = new Project(
+  "assets/CrudApi.png",
+  "CRUD API",
+  "REST API for a webshop built with Node.js, Express, and MongoDB with admin dashboard.",
+  "https://github.com/ingridstanic/myAPIproject",
+  "",
 );
 const project4: Project = new Project(
   "assets/placeholder.png",
   "Lorem Ipsum",
   "dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "placeholder",
-  "placeholder",
+  "",
 );
 
-export const myProjects: Project[] = [toDo, coffeeShop, project3, project4];
+export const myProjects: Project[] = [toDo, coffeeShop, crudAPI, project4];
