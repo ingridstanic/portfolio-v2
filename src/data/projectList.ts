@@ -21,12 +21,12 @@ const crudAPI: Project = new Project(
   "https://github.com/ingridstanic/myAPIproject",
   "",
 );
-const project4: Project = new Project(
-  "assets/placeholder.png",
-  "Lorem Ipsum",
-  "dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "placeholder",
-  "",
+const StarWarsQuiz: Project = new Project(
+  "assets/greenYoda.svg",
+  "Star Wars Quiz",
+  "An interactive Star Wars quiz that tests knowledge and displays custom ranks based on the score.",
+  "https://github.com/ingridstanic/quiz/tree/main",
+  "https://aswquiz.netlify.app/",
 );
 
-export const myProjects: Project[] = [toDo, coffeeShop, crudAPI, project4];
+export const myProjects: Project[] = [toDo, coffeeShop, crudAPI, StarWarsQuiz];
