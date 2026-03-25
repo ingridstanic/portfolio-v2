@@ -21,7 +21,7 @@ const crudAPI: Project = new Project(
   "https://github.com/ingridstanic/myAPIproject",
   "",
 );
-const StarWarsQuiz: Project = new Project(
+const starWarsQuiz: Project = new Project(
   "assets/greenYoda.svg",
   "Star Wars Quiz",
   "An interactive Star Wars quiz that tests knowledge and displays custom ranks based on the score.",
@@ -29,4 +29,18 @@ const StarWarsQuiz: Project = new Project(
   "https://aswquiz.netlify.app/",
 );
 
-export const myProjects: Project[] = [toDo, coffeeShop, crudAPI, StarWarsQuiz];
+const pokemonWho: Project = new Project(
+  "assets/PokemonWho.png",
+  "Who's that pokémon?",
+  "A project under development. A pokémon mini game using Pokémon API.",
+  "https://github.com/ingridstanic/pokemon_api",
+  "",
+);
+
+export const myProjects: Project[] = [
+  toDo,
+  coffeeShop,
+  crudAPI,
+  starWarsQuiz,
+  pokemonWho,
+];
